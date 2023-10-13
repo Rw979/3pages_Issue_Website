@@ -2,7 +2,6 @@ body {
     background-color: #f2f2f2;
     color: #fff;
     font-family: sans-serif;
-
 }
 
 .header{
@@ -16,11 +15,11 @@ body {
   z-index: 100;
 }
 
-.EYESONYOU {
+.logo {
   font-size: 22px;
   color: #26254c;
-  text-decoration: none;
   font-weight: 700;
+  text-decoration: none;
 }
 
 .navbar a {
@@ -33,80 +32,99 @@ body {
   margin-bottom: 20px;
 }
 
-
-h1 {
-  color: #cc1f0d;
-  font-family: Garamond, serif;
-  font-size:120px;
-  position: absolute;
-  justify-content:space-between;
-  top: 85%;
-  left: 70%;
-  transform: translate(-85%, -70%);
-  white-space: nowrap;
+.indexColumns1 {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  margin-top: 100px;
 }
 
 
-h2 {
+.indexColumns1 img {
+  justify-content: center;
+  align-items:center;
+}
+
+.indexColumns1 h1 {
+  display: flex;
+  color: #cc1f0d;
+  font-family: Garamond, serif;
+  font-size:120px;
+}
+
+
+.indexColumns2 {
+  display: flex;
+  margin: 0px 10vw 0px 10vw;
+  gap: 2vw;
+}
+
+.indexright-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.indexleft-column, .indexright-column{
+  flex-basis: 50%;
+  margin: 0px;
+}
+
+.indexColumns2>div>img {
+  width: 100%;
+}
+
+.indexleft-column h2{
   color: #8894a2;
   font-family: Garamond, serif;
   font-size:50px;
-  position: absolute;
-  top: 115%;
-  left: 30%;
-  transform: translate(-115%, -30%);
 }
 
-p {
+.indexleft-column p{
   color: #8894a2;
   font-style:normal;
   font-family: Garamond, serif;
   font-size:20px;
   line-height: 40px;
-  position:absolute;
-  top:165%;
-  left:65%;
-  transform: translate(-145%, -65%);
 }
 
-.image1 {
-  display: block;
-  margin-top:90px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
+.indexright-colum img{
+  align-items:center;
 }
 
-.image2 {
-  display: block;
-  margin-top:380px;
-  margin-left: auto;
-  margin-right: 150px;
-  width: 38%;
-}
-
-.Ch1 {
+.ch1 {
+  display:flex;
   color: #cc1f0d;
   font-family: Garamond, serif;
   font-size:120px;
-  position: absolute;
-  top: 8%;
-  left: 18%;
-  transform: translate(-12%, -18%);
-
+  justify-content: flex-start;
+  margin-left: 80px;
 }
 
-.Cp1 {
+.challengesColumns1 {
+  display: flex;
+  justify-content:center;
+  margin: 0px 10vw 0px 10vw;
+  gap: 2vw;
+  flex-basis: 50%;
+  margin: 50px;
+}
+
+.challengesColumns1, p + div img{
+  flex-basis: 50%;
+  margin: 50px;
+}
+
+
+.challengesColumns1 p {
   color: #8894a2;
   font-style:normal;
   font-family: Garamond, serif;
   font-size:20px;
   line-height: 40px;
-  position:absolute;
-  top:70%;
-  left:40%;
-  transform: translate(-70%, -40%);
-  max-width:540px;
 }
 
 .Cp2 {
@@ -126,301 +144,204 @@ p {
   hyphens: auto;
 }
 
-.Cp3 {
+.challengesColumns2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 10vw 0px 10vw;
+  gap: 2vw;
+  margin-top: 40px;
+}
+
+.challengesleft-column {
+  margin-top: 100px;
+}
+
+.challengesleft-column, .challengesright-column{
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+  margin: 20px;
+}
+
+.challengesColumns2 .Cp3,
+.challengesColumns2 .Cp4,
+.challengesColumns2 .Cp5 {
   color: #26254c;
   font-style: normal;
   font-family: Garamond, serif;
   font-size: 20px;
   line-height: 30px;
-  width:30%;
-  position: absolute;
-  top: 340%;
-  left: 115%;
-  transform: translate(-340%, -85%);
-  max-width: 1000px;
-  text-align:justify;
 }
 
-.image8 {
-  display: block;
-  margin-top:100px;
-  margin-left: auto;
-  margin-right: 150px;
-  width: 40%;
+.urgencyColumns1 {
+  display: flex;
+  margin: 0px 5vw 0px 5vw;
+  gap: 2vw;
 }
 
-.Cp4{
-  color: #26254c;
-  font-style: normal;
-  font-family: Garamond, serif;
-  font-size: 20px;
-  line-height: 30px;
-  width:30%;
-  position: absolute;
-  top: 390%;
-  left: 155%;
-  transform: translate(-340%, -85%);
-  max-width: 1000px;
-  text-align:justify;
+.urgencyright-column img {
+  align-items: center;
 }
 
-.Cp5{
-  color: #26254c;
-  font-style: normal;
-  font-family: Garamond, serif;
-  font-size: 20px;
-  line-height: 30px;
-  width:30%;
-  position: absolute;
-  top: 450%;
-  left: 115%;
-  transform: translate(-340%, -85%);
-  max-width: 1000px;
-  text-align:justify;
+.urgencyleft-column, .urgencyright-column{
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+  margin: 20px;
 }
 
-.image9 {
-  display: block;
-  margin-top:70px;
-  margin-left: auto;
-  margin-right: 850px;
-  width: 20%;
-  height:20%;
-}
-
-.image10 {
-  display: block;
-  margin-top:100px;
-  margin-left: auto;
-  margin-right: 170px;
-  width: 35%;
-}
-
-.image3 {
-  display: block;
-  margin-top:300px;
-  margin-left: auto;
-  margin-right: 150px;
-  width: 38%;
-}
-
-.Uh1 {
+.urgencyleft-column h1{
   color: #cc1f0d;
   font-family: Garamond, serif;
   font-size:120px;
-  position: absolute;
-  top: 8%;
-  left: 18%;
-  transform: translate(-12%, -18%);
-
 }
 
-.png2 {
-  display: flex;
-  justify-content: center;
-  max-width: 80%;
-  height: auto;
-  position: relative;
-  top: -150px;
-  margin-left: auto;
-  margin-right: 5px;
-}
-
-.Up1{
+.urgencyleft-column p{
   color: #8894a2;
-  font-style:normal;
+  font-size: 20px;
   font-family: Garamond, serif;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.png1 {
+.png2link {
   display: flex;
   justify-content: center;
-  align-items: center;
-  max-width: 80%;
-  height: auto;
-  margin-top:200px;
-  margin-left: auto;
-  margin-right: 150px;
+  align-items:center;
 }
 
-.image11{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 80%;
-    height: auto;
-    margin-top:100px;
-    margin-left: auto;
-    margin-right: auto;
+.urgencyColumns2 {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
 }
 
-.Up2{
+.urgencyColumns2 img {
+  max-width: 100%;
+  max-height: 300px;
+}
+
+.urgencyColumns2 p{
   color: #8894a2;
+  font-size:20px;
   font-style:normal;
   font-family: Garamond, serif;
-  display: flex;
-  width:40%;
-  margin-top:1300px;
-  margin-left: 350px;
-  margin-right: auto;
+  max-width: 800px;
 }
 
 .Sh1 {
+  display:flex;
   color: #26254c;
   font-family: Garamond, serif;
   font-size:120px;
-  position: absolute;
-  top: 10%;
-  left: 38%;
-  transform: translate(-10%, -38%);
+  justify-content: center;
+  align-items:center;
 }
 
-.Sp1 {
+.supportColumns1 {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+.supportColumns1 .SQ1,
+.supportColumns1 .SQ2,
+.supportColumns1 .SQ3,
+.supportColumns1 .SQ4 {
+  background-color: rgba(204, 31, 13, 1);
+  width: 220px;
+  height: 220px;
   color: #8894a2;
   font-style: normal;
   font-family: Garamond, serif;
   font-size: 20px;
-  line-height: 40px;
-  position: absolute;
-  top: 150%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 700px;
-  text-align: center;
+  line-height: 30px;
 }
 
-.Sp2 {
+
+
+.Sp1container {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  text-align: center;
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+.Sp1container p{
   color: #26254c;
   font-style: normal;
   font-family: Garamond, serif;
   font-size: 20px;
+}
+
+.supportColumns2 {
+  display: flex;
+  justify-content: center;
+  flex-direction:row;
+  margin-top: 80px;
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+.supportColumns2 p + div a {
+  flex-basis: 50%;
+  margin: 50px;
+}
+
+.supportColumns2 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.supportColumns2 p{
+  color: #8894a2;
+  font-style: normal;
+  font-family: Garamond, serif;
+  font-size: 20px;
   line-height: 40px;
-  position: absolute;
-  top: 220%;
-  left: 70%;
-  transform: translate(-200%, -70%);
-  max-width: 700px;
   text-align:justify;
 }
 
-.Sp3 {
+.supportColumns3{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.supportColumns3 p{
   color: #8894a2;
   font-style: normal;
   font-family: Garamond, serif;
   font-size: 20px;
   line-height: 40px;
-  position: absolute;
-  top: 380%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 700px;
   text-align: center;
+  padding-left: 250px;
+  padding-right: 250px;
 }
 
-.image4 {
-  display: block;
-  margin-top:250px;
-  margin-left: auto;
-  margin-right: 450px;
-  width: 35%;
-}
-
-.image5 {
-  display: block;
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-}
-
-.SQ1 {
-  background-color: rgba(204, 31, 13, 1);
-  width: 220px;
-  height: 220px;
-  padding: 10px;
-  margin: 40px;
-  color: #8894a2;
-  font-style: normal;
+.Wh1 {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  color: #cc1f0d;
   font-family: Garamond, serif;
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: -42%;
-  margin-left: 0%;
-}
-
-.SQ2 {
-  background-color: rgba(204, 31, 13, 1);
-  width: 220px;
-  height: 220px;
-  padding: 10px;
-  margin: 40px;
-  color: #8894a2;
-  font-style: normal;
-  font-family: Garamond, serif;
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: -3%;
-  margin-left: 16.5%;
-}
-
-.SQ3 {
-  background-color: rgba(204, 31, 13, 1);
-  width: 220px;
-  height: 220px;
-  padding: 10px;
-  margin: 40px;
-  color: #8894a2;
-  font-style: normal;
-  font-family: Garamond, serif;
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: -19%;
-  margin-left: 68.3%;
-}
-
-.SQ4 {
-  background-color: rgba(204, 31, 13, 1);
-  width: 220px;
-  height: 220px;
-  padding: 10px;
-  margin: 40px;
-  color: #8894a2;
-  font-style: normal;
-  font-family: Garamond, serif;
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: -36%;
-  margin-left: 85%;
-}
-
-.image7 {
-  display: block;
-  margin-top:750px;
-  margin-left: auto;
-  margin-right: 150px;
-  width: 40%;
-}
-
-.image6 {
-  display: block;
-  margin-top:150px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
+  font-size:120px;
 }
 
 .CIP {
+  display:flex;
+  align-items: center;
+  flex-direction: column;
   color: #8894a2;
   font-style:normal;
   font-family: Garamond, serif;
   font-size:20px;
   line-height: 40px;
-  position:absolute;
-  top:53%;
-  left:30%;
-  transform: translate(-53%, -30%);
-  max-width:540px;
 }
